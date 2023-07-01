@@ -23,10 +23,10 @@ You can view all of the dataset's details by visiting this [link](https://www.ci
    ```shell
    git clone https://github.com/blkhanhlinh/pedestrian-detection.git
 
-2. cd to Streamlit folder:
+2. cd to this folder:
    ```shell
    cd pedestrian-detection
-   cd Streamlit
+   
 3. Install the dependencies:
    ```shell
    pip install -r requirements.txt
