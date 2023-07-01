@@ -16,7 +16,7 @@ You can view all of the dataset's details by visiting this [link](https://www.ci
 ## Model Architecture
 1. We employed the HOG (Histogram of Oriented Gradients) + SVM (Support Vector Machine) models for pedestrian detection.
 
-2. We also experimented with the Faster R-CNN (Region-based Convolutional Neural Network) model for pedestrian detection as a baseline comparison to the HOG + model. This model combines a region proposal network (RPN) and a Fast R-CNN detector. It uses a backbone network, such as MobileNet or ResNet, to extract features from the input image, and then generates region proposals for potential pedestrian bounding boxes. The final detection is performed by classifying and refining these proposals.
+2. We also experimented with the Faster R-CNN (Region-based Convolutional Neural Network) model for pedestrian detection as a baseline comparison to the HOG + SVM model. This model combines a region proposal network (RPN) and a Fast R-CNN detector. It uses a backbone network, such as MobileNet or ResNet, to extract features from the input image, and then generates region proposals for potential pedestrian bounding boxes. The final detection is performed by classifying and refining these proposals.
 
 ## Installation
 1. Clone the repository:
@@ -26,12 +26,14 @@ You can view all of the dataset's details by visiting this [link](https://www.ci
 2. cd to this folder:
    ```shell
    cd pedestrian-detection
-   
+
 3. Install the dependencies:
    ```shell
    pip install -r requirements.txt
+
 4. Download the trained Faster R-CNN model:
    [Link to trained model](https://drive.google.com/file/d/1Q-YX0TtMsEd5cXXF-x9vVG_ktC91IpYi/view?usp=drive_link)
+
    Save the model in the '/' directory
 
 ## Performance
