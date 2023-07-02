@@ -1,0 +1,102 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amsxtra,amssymb,latexsym,amscd,amsthm}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage[plain]{algorithm}
+\usepackage{mathtools}
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage{filecontents}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{xcolor, soul}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage[hidelinks]{hyperref}
+\usepackage{blindtext}
+\usepackage{tikz}
+\usepackage{indentfirst}
+\usepackage{ragged2e}
+%\addtokomafont{disposition}{\boldmath}% use bold math in titles
+\usepackage{natbib}
+\usepackage{filecontents,hyperref}
+\usepackage{enumitem}
+\usepackage{subfig}
+\usepackage{tabularray}
+\usepackage{array}
+\usepackage{booktabs}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+%\setlength{\parindent}{0pt}
+
+\begin{document}
+\setcounter{secnumdepth}{5}
+\setstretch{1.2}
+\input{titlepage}
+\begin{titlepage}
+    \begin{center}
+        \textbf{\Large Lời cảm ơn}
+    \end{center}
+    Nhóm chúng em xin gửi lời cảm ơn chân thành đến T.S Mai Tiến Dũng - Giảng viên khoa Khoa học máy tính, trường Đại học Công nghệ thông tin, Đại học Quốc gia Thành phố Hồ Chí Minh, phụ trách lớp CS231.N21.KHCL - Môn Nhập môn thị giác máy tính, trong thời gian qua đã tận tình truyền đạt và giảng dạy những kiến thức, kỹ năng vô cùng hữu ích về thị giác máy tính.
+    \vspace{5mm}
+    \\
+    Trong quá trình thực hiện đồ án môn học, mặc dù nhóm đã cố gắng nhưng chắc chắn sẽ không tránh được những sai sót không đáng có. Qua buổi trình bày trên lớp thì nhóm đã nhận được những góp ý của thầy và câu hỏi của các bạn đồng thời chúng em đã thực hiện những sửa đổi để bài báo cáo trở nên hoàn thiện. Nhờ những đóng góp đó mà nhóm chúng em tích lũy thêm nhiều kinh nghiệm và kiến thức. Qua môn học này, chúng em đã được củng cố không chỉ kiến thức môn học mà phát triển kỹ năng thuyết trình, kỹ năng tìm kiếm tài liệu. Chúng em xin chân thành cảm ơn!
+    \begin{flushright}
+        Thành phố Hồ Chí Minh, tháng 7 năm 2023
+    \end{flushright}
+\end{titlepage}
+\tableofcontents
+\pagebreak
+
+\section{Tổng quan}
+\input{Sections/section1}
+
+\section{Tổng quan bài toán và cơ sở lý thuyết}
+\input{Sections/section2/problem}
+\input{Sections/section2/metrics}
+\subsection{Các phương pháp được sử dụng trong đề tài}
+\input{Sections/section2/HOG+SVM}
+\input{Sections/section2/FasterRCNN}
+
+\section{Thực nghiệm}
+\input{Sections/section3/env}
+\input{Sections/section3/dataset}
+\input{Sections/section3/implement}
+\input{Sections/section3/result}
+\input{Sections/section3/deploy}
+\input{Sections/section3/sources}
+
+\pagebreak
+\bibliographystyle{unsrt}
+\bibliography{refs}
+\end{document}
